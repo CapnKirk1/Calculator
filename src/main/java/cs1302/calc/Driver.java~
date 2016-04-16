@@ -1,3 +1,4 @@
+
 package cs1302.calc;
 
 import javafx.fxml.FXMLLoader;
@@ -13,7 +14,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 public class Driver extends Application {
 
-   
+    @FXML
+	public TextField display;
     
     public static void main(String[] args) {
         launch(args);
@@ -36,6 +38,15 @@ public class Driver extends Application {
         primaryStage.show();
 
     } // start
+
+    @FXML
+	public void handleButtons(ActionEvent event){
+	
+	
+	
+	display.setText("7");
+
+    }
 } // Driver
 
 
