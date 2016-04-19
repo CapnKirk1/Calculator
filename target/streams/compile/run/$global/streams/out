@@ -1,6 +1,6 @@
 [0m[[0minfo[0m] [0mRunning cs1302.calc.Driver [0m
 [0m[[0minfo[0m] [0mjavafx.fxml.LoadException: No controller specified.[0m
-[0m[[0minfo[0m] [0m/Users/sethkirksey/Documents/CSCI/Project4/Calculator/target/scala-2.10/classes/calc.fxml:31[0m
+[0m[[0minfo[0m] [0m/Users/sethkirksey/Documents/CSCI/Project4/Calculator/target/scala-2.10/classes/calc.fxml:32[0m
 [0m[[0minfo[0m] [0m[0m
 java.lang.RuntimeException: Nonzero exit code returned from runner: 1
 	at scala.sys.package$.error(package.scala:27)

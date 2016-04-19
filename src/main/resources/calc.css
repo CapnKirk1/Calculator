@@ -1,6 +1,6 @@
 
 #main-pane {
-    -fx-background-color: white;
+    -fx-background-color: darkgrey;
 }
 
 #welcome-text {
@@ -9,5 +9,15 @@
     -fx-fill: grey;
 }
 #recursion {
-	   -fx-fill: blue;
+    -fx-background-color: cornflowerblue;
+    
+}
+#equals {
+	-fx-background-color: green;
+}
+#orange {
+	-fx-background-color: orange;
+}
+#grid {
+	-fx-background-color: darkgrey;
 }

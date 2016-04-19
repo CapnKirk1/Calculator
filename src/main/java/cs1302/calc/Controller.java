@@ -13,14 +13,12 @@ import javafx.stage.Stage;
 
 public class Controller{
     String text = "";
-    @FXML
-	public TextField display;
-    @FXML
-	public void handleButtons(ActionEvent event){
+    @FXML public TextField display;
+
+    @FXML public void handleButtons(ActionEvent event){
 	text += "7";
 	display.setText(text);
-
-    }
+	}
 
 
 }
