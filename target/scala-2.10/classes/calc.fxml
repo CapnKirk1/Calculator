@@ -9,9 +9,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane id="main-pane" fx:id="grid" alignment="center" prefHeight="401.0" prefWidth="568.0" stylesheets="@calc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane id="main-pane" alignment="center" prefHeight="401.0" prefWidth="568.0" stylesheets="@calc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs1302.calc.Controller">
    <children>
-      <GridPane fx:id="grid" prefHeight="322.0" prefWidth="592.0" stylesheets="@calc.css" GridPane.rowIndex="3">
+      <GridPane prefHeight="333.0" prefWidth="572.0" stylesheets="@calc.css" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="79.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="0.0" prefWidth="159.0" />
@@ -25,22 +25,22 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" onAction="#handleButtons" prefHeight="50.0" prefWidth="50.0" text="7">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton7" prefHeight="50.0" prefWidth="50.0" text="7">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" GridPane.rowIndex="2">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton1" prefHeight="50.0" prefWidth="50.0" text="1" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="0" GridPane.rowIndex="3">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton0" prefHeight="50.0" prefWidth="50.0" text="0" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="equals" mnemonicParsing="false" prefHeight="55.0" prefWidth="135.0" stylesheets="@calc.css" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="equals" mnemonicParsing="false" onAction="#handleButtonEquals" prefHeight="55.0" prefWidth="135.0" stylesheets="@calc.css" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
@@ -54,12 +54,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton2" prefHeight="50.0" prefWidth="50.0" text="2">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" GridPane.columnIndex="1">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton3" prefHeight="50.0" prefWidth="50.0" text="3" GridPane.columnIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -75,12 +75,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8">
+                  <Button fx:id="button" alignment="CENTER" mnemonicParsing="false" onAction="#handleButton8" prefHeight="50.0" prefWidth="50.0" text="8">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" GridPane.columnIndex="1">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton9" prefHeight="50.0" prefWidth="50.0" text="9" GridPane.columnIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -97,17 +97,17 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="^">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonExponential" prefHeight="50.0" prefWidth="50.0" text="^">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="«" GridPane.columnIndex="1">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonLeftShift" prefHeight="50.0" prefWidth="50.0" text="«" GridPane.columnIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="»" GridPane.columnIndex="2">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonRightShift" prefHeight="50.0" prefWidth="50.0" text="»" GridPane.columnIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -123,12 +123,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton5" prefHeight="50.0" prefWidth="50.0" text="5">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" GridPane.columnIndex="1">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton6" prefHeight="50.0" prefWidth="50.0" text="6" GridPane.columnIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -145,7 +145,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="!">
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonFactorial" prefHeight="50.0" prefWidth="50.0" text="!">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -162,27 +162,27 @@
                   </Button>
                </children>
             </GridPane>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" GridPane.rowIndex="1">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButton4" prefHeight="50.0" prefWidth="50.0" text="4" GridPane.rowIndex="1">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/" GridPane.columnIndex="2">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonDivide" prefHeight="50.0" prefWidth="50.0" text="/" GridPane.columnIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonMultiply" prefHeight="50.0" prefWidth="50.0" text="*" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonSubtract" prefHeight="50.0" prefWidth="50.0" text="-" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#handleButtonAdd" prefHeight="50.0" prefWidth="50.0" text="+" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
@@ -205,7 +205,7 @@
             <Insets left="30.0" />
          </GridPane.margin>
       </GridPane>
-      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
          <children>
             <Label text="0" />
             <Label text="0" />
@@ -249,13 +249,15 @@
             <Label centerShape="false" text="0" />
          </children>
       </HBox>
-      <TextField alignment="CENTER_RIGHT" editable="false" prefHeight="27.0" prefWidth="50.0" text="0" GridPane.rowIndex="1" />
+      <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" prefHeight="27.0" prefWidth="50.0" text="0" />
+      <Label fx:id="answer" prefHeight="0.0" prefWidth="95.0" GridPane.rowIndex="2" />
    </children>
    <columnConstraints>
       <ColumnConstraints maxWidth="564.0" minWidth="198.0" prefWidth="564.0" />
       <ColumnConstraints maxWidth="202.0" minWidth="0.0" prefWidth="0.0" />
    </columnConstraints>
    <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
       <RowConstraints />
       <RowConstraints minHeight="10.0" prefHeight="200.0" />
       <RowConstraints minHeight="10.0" prefHeight="200.0" />
