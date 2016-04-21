@@ -150,12 +150,12 @@
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button fx:id="orange" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@calc.css" text="&lt;" GridPane.columnIndex="1">
+                  <Button fx:id="orange" mnemonicParsing="false" onAction="#handleButtonBackspace" prefHeight="50.0" prefWidth="50.0" stylesheets="@calc.css" text="&lt;" GridPane.columnIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button fx:id="orange" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@calc.css" text="X" GridPane.columnIndex="2">
+                  <Button fx:id="orange" mnemonicParsing="false" onAction="#handleButtonClear" prefHeight="50.0" prefWidth="50.0" stylesheets="@calc.css" text="X" GridPane.columnIndex="2">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -187,12 +187,12 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button id="recursion" fx:id="recursion" mnemonicParsing="false" prefHeight="50.0" prefWidth="215.0" stylesheets="@calc.css" text="Use Recursion" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button id="recursion" fx:id="useThing" mnemonicParsing="false" onAction="#handleButtonUse" prefHeight="50.0" prefWidth="215.0" stylesheets="@calc.css" text="Use Recursion" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="recursion" mnemonicParsing="false" prefHeight="50.0" prefWidth="215.0" stylesheets="@calc.css" text="Use Iteration" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button fx:id="recursion" mnemonicParsing="false" prefHeight="50.0" prefWidth="215.0" stylesheets="@calc.css" text="Hide Binary" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
@@ -250,7 +250,11 @@
          </children>
       </HBox>
       <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" prefHeight="27.0" prefWidth="50.0" text="0" />
-      <Label fx:id="answer" prefHeight="0.0" prefWidth="95.0" GridPane.rowIndex="2" />
+      <Label fx:id="answer" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="639.0" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
    <columnConstraints>
       <ColumnConstraints maxWidth="564.0" minWidth="198.0" prefWidth="564.0" />
