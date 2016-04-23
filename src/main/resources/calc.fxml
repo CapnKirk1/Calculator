@@ -192,7 +192,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="recursion" mnemonicParsing="false" prefHeight="50.0" prefWidth="215.0" stylesheets="@calc.css" text="Hide Binary" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button fx:id="binary" mnemonicParsing="false" prefHeight="50.0" prefWidth="215.0" stylesheets="@calc.css" text="Hide Binary" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
@@ -207,50 +207,48 @@
       </GridPane>
       <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
          <children>
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
+            <Label fx:id="bl31" onMouseClicked="#label31" text="0" textFill="WHITE" />
+            <Label fx:id="bl30" onMouseClicked="#label30" text="0" textFill="WHITE" />
+            <Label fx:id="bl29" onMouseClicked="#label29" text="0" textFill="WHITE" />
             <Label text="  " />
+            <Label fx:id="bl28" onMouseClicked="#label28" text="0" textFill="WHITE" />
+            <Label fx:id="bl27" onMouseClicked="#label27" text="0" textFill="WHITE" />
+            <Label fx:id="bl26" onMouseClicked="#label26" text="0" textFill="WHITE" />
+            <Label fx:id="bl25" onMouseClicked="#label25" text="0" textFill="WHITE" />
             <Label text="  " />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
+            <Label fx:id="bl24" onMouseClicked="#label24" text="0" textFill="WHITE" />
+            <Label fx:id="bl23" onMouseClicked="#label23" text="0" textFill="WHITE" />
+            <Label fx:id="bl22" onMouseClicked="#label22" text="0" textFill="WHITE" />
+            <Label fx:id="bl21" onMouseClicked="#label21" text="0" textFill="WHITE" />
             <Label text="  " />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
+            <Label fx:id="bl20" onMouseClicked="#label20" text="0" textFill="WHITE" />
+            <Label fx:id="bl19" onMouseClicked="#label19" text="0" textFill="WHITE" />
+            <Label fx:id="bl18" onMouseClicked="#label18" text="0" textFill="WHITE" />
+            <Label fx:id="bl17" onMouseClicked="#label17" text="0" textFill="WHITE" />
             <Label text="  " />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
+            <Label fx:id="bl16" onMouseClicked="#label16" text="0" textFill="WHITE" />
+            <Label fx:id="bl15" onMouseClicked="#label15" text="0" textFill="WHITE" />
+            <Label fx:id="bl14" onMouseClicked="#label14" text="0" textFill="WHITE" />
+            <Label fx:id="bl13" onMouseClicked="#label13" text="0" textFill="WHITE" />
             <Label text="  " />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
+            <Label fx:id="bl12" onMouseClicked="#label12" text="0" textFill="WHITE" />
+            <Label fx:id="bl11" onMouseClicked="#label11" text="0" textFill="WHITE" />
+            <Label fx:id="bl10" onMouseClicked="#label10" text="0" textFill="WHITE" />
+            <Label fx:id="bl9" onMouseClicked="#label9" text="0" textFill="WHITE" />
             <Label text="  " />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
+            <Label fx:id="bl8" onMouseClicked="#label8" text="0" textFill="WHITE" />
+            <Label fx:id="bl7" onMouseClicked="#label7" text="0" textFill="WHITE" />
+            <Label fx:id="bl6" onMouseClicked="#label6" text="0" textFill="WHITE" />
+            <Label fx:id="bl5" onMouseClicked="#label5" text="0" textFill="WHITE" />
             <Label text="  " />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="0" />
-            <Label text="  " />
-            <Label text="0" />
-            <Label text="0" />
-            <Label prefHeight="17.0" prefWidth="0.0" text="0" />
-            <Label centerShape="false" text="0" />
+            <Label fx:id="bl4" onMouseClicked="#label4" text="0" textFill="WHITE" />
+            <Label fx:id="bl3" onMouseClicked="#label3" text="0" textFill="WHITE" />
+            <Label fx:id="bl2" onMouseClicked="#label2" prefHeight="17.0" prefWidth="0.0" text="0" textFill="WHITE" />
+            <Label fx:id="bl1" centerShape="false" onMouseClicked="#label1" text="0" textFill="WHITE" />
          </children>
       </HBox>
       <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" prefHeight="27.0" prefWidth="50.0" text="0" />
-      <Label fx:id="answer" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="639.0" GridPane.rowIndex="2">
+      <Label fx:id="answer" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="639.0" textFill="#7bffa0" GridPane.rowIndex="2">
          <font>
             <Font size="18.0" />
          </font>

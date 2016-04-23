@@ -1,6 +1,6 @@
 
 #main-pane {
-    -fx-background-color: white;
+    -fx-background-image: url("http://4.bp.blogspot.com/_kCDts9B_6kw/TBPXShy0vWI/AAAAAAAACe0/3fzlCA3o3_8/s1600/Warm+amber+tile1.png");
 }
 
 #welcome-text {
@@ -9,6 +9,9 @@
     -fx-fill: grey;
 }
 #recursion {
+    -fx-background-color: cornflowerblue;
+}
+#binary {
     -fx-background-color: cornflowerblue;
     
 }

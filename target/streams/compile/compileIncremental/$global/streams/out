@@ -2,22 +2,24 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set(/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/RecursiveMath.java)[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/RecursiveMath.java, /Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/IterativeMath.java)[0m
 [0m[[0mdebug[0m] [0mInvalidated products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/RecursiveMath.java)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/RecursiveMath.java, /Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/IterativeMath.java)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/RecursiveMath.java)[0m
-[0m[[0minfo[0m] [0mCompiling 1 Java source to /Users/sethkirksey/Documents/CSCI/Project4/Calculator/target/scala-2.10/classes...[0m
-[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@7b02cb7c directly...[0m
-[0m[[0mdebug[0m] [0mJava compilation took 0.382203174 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.070908843 s[0m
-[0m[[0mdebug[0m] [0mJava compile + analysis took 0.457654176 s[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/RecursiveMath.java, /Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/IterativeMath.java)[0m
+[0m[[0minfo[0m] [0mCompiling 2 Java sources to /Users/sethkirksey/Documents/CSCI/Project4/Calculator/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@5f41ac14 directly...[0m
+[0m[[0minfo[0m] [0m/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/IterativeMath.java: /Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/IterativeMath.java uses or overrides a deprecated API.[0m
+[0m[[0minfo[0m] [0m/Users/sethkirksey/Documents/CSCI/Project4/Calculator/src/main/java/cs1302/calc/IterativeMath.java: Recompile with -Xlint:deprecation for details.[0m
+[0m[[0mdebug[0m] [0mJava compilation took 0.424458023 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.103554027 s[0m
+[0m[[0mdebug[0m] [0mJava compile + analysis took 0.533186755 s[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m

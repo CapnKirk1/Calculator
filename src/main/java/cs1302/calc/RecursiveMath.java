@@ -27,6 +27,7 @@ public class RecursiveMath implements Math {
 
     public int sub(int lhs, int rhs) {
         if(rhs == 0) return lhs;
+	if(rhs > lhs) return 0;
 	return sub(dec(lhs), dec(rhs));
     } // sub
 
@@ -41,15 +42,23 @@ public class RecursiveMath implements Math {
 	return mul_acc(add(lhs, acc), rhs, acc);
     }
     public int div(int lhs, int rhs) {
-        throw new UnsupportedOperationException();
+        if (lhs < rhs) return 0;
+	if(lhs == rhs) return 1;
+	return dec(div(sub(lhs, rhs), rhs));
     } // div
 
-    public int fac(int n) {
-        throw new UnsupportedOperationException();
+    public int fac(int n) { 
+	return fac_acc(1, n); 
     } // fac
 
-    public int pow(int lhs, int rhs) {
-        throw new UnsupportedOperationException();
-    } // pow
+    int fac_acc(int acc, int n) { 
+	if (n == 0) return acc; 
+	return fac_acc(mul(n,acc), dec(n)); 
+    } // factorial_acc
 
+    public int pow(int lhs, int rhs) {
+        if(rhs == 0) return 1;
+	return mul(lhs, pow(lhs, dec(rhs)));
+    } // pow
+    
 } // RecursiveMath

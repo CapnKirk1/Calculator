@@ -29,7 +29,6 @@ public class IterativeMath implements Math {
     } // add
 
     public int sub(int lhs, int rhs) {
-	if (rhs > lhs) return 0;
 	while (rhs != 0){
 	    lhs = dec(lhs);
 	    rhs = dec(rhs);
