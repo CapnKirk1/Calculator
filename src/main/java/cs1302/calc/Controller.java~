@@ -502,7 +502,7 @@ public class Controller{
 	System.out.println(Integer.toBinaryString(ans));
 	String some = Integer.toBinaryString(ans);
 	String reverse = "";
-	for (int i = some.length(); i >= 0; i--){
+	for (int i = some.length()-1; i >= 0; i--){
 	    reverse += some.charAt(i);
 	}
 	for (int i = 0; i < some.length(); i++){

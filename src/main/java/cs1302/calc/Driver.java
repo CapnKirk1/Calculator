@@ -11,19 +11,19 @@ import java.io.IOException;
 import javafx.scene.control.Button;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+
 public class Driver extends Application {
 
    
     
-    public static void main(String[] args) {
-        launch(args);
-    } // main
+    public static void main(String[] args){
+	launch(args);
+	    }
     
     @Override
     public void start(Stage primaryStage) {
 
 	Parent root = null;
-
 	try {
 	    root = FXMLLoader.load(getClass().getResource("/calc.fxml"));
 	} catch (IOException e) {

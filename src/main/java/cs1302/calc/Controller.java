@@ -502,6 +502,9 @@ public class Controller{
 	System.out.println(Integer.toBinaryString(ans));
 	String some = Integer.toBinaryString(ans);
 	String reverse = "";
+	for (int i = 0; i < 31; i++){
+	    bl[i].setText("0");
+	}
 	for (int i = some.length()-1; i >= 0; i--){
 	    reverse += some.charAt(i);
 	}
@@ -604,8 +607,20 @@ public class Controller{
 	
 	}
     @FXML public void handleButtonBinary(ActionEvent event){
-	if(buttonLabel2 == "Hide Binary")buttonLabel2 = "Show Binary";
-	else buttonLabel2 = "Hide Binary";
+	Label bl[] = {bl1,bl2,bl3,bl4,bl5,bl6,bl7,bl8,bl9,bl10,bl11,bl12,bl13,bl14,bl15,bl16,bl17,bl18,bl19,bl20,bl21,bl22,bl23,bl24,bl25,bl26,bl27,bl28,bl29,bl30,bl31};
+         	
+	if(buttonLabel2.equals("Hide Binary")){
+	    buttonLabel2 = "Show Binary";
+	    for (int i = 0; i < 31; i++){
+		bl[i].setVisible(false);
+	    }
+	}
+	else{
+	    buttonLabel2 = "Hide Binary";
+	    for (int i = 0; i < 31; i++){
+		bl[i].setVisible(true);
+	    }
+	}
 	binary.setText(buttonLabel2);
 	
 	}
@@ -636,30 +651,34 @@ public class Controller{
 	*/
     }
     public void doMath(String input){
-	
-	// string containing a mathematical expression represented in infix notation
-	String expression = display.getText();
-
-	// convert the expression into an array by splitting it by white space
-	String infix[] = expression.split(" ");
-
-	// use the ReversePolishNotation class to get an array containing the expression
-	// in post-fix notation
-	String postfix[] = ReversePolishNotation.infixToPostfix(infix);
-
-	// create an instance of your BasicMath class
-	Math iterativeMath = new IterativeMath();
-	Math recursiveMath = new RecursiveMath();
-	// use the ReversePolishNotation class to evaluate the expression
-	int result = 0;
-	if(buttonLabel == "Use Recursion"){
-	     result = ReversePolishNotation.evaluate(iterativeMath, postfix);
+	try{  
+	    // string containing a mathematical expression represented in infix notation
+	    String expression = display.getText();
+	    
+	    // convert the expression into an array by splitting it by white space
+	    String infix[] = expression.split(" ");
+	    
+	    // use the ReversePolishNotation class to get an array containing the expression
+	    // in post-fix notation
+	    String postfix[] = ReversePolishNotation.infixToPostfix(infix);
+	    
+	    // create an instance of your BasicMath class
+	    Math iterativeMath = new IterativeMath();
+	    Math recursiveMath = new RecursiveMath();
+	    // use the ReversePolishNotation class to evaluate the expression
+	    int result = 0;
+	    if(buttonLabel == "Use Recursion"){
+		result = ReversePolishNotation.evaluate(iterativeMath, postfix);
+	    }
+	    else{
+		result = ReversePolishNotation.evaluate(recursiveMath, postfix);
+	    }
+	    ans = result;
+	    finalAnswer = Integer.toString(result);
 	}
-	else{
-	    result = ReversePolishNotation.evaluate(recursiveMath, postfix);
+	catch(Exception e){
+	    System.out.println("Error");
 	}
-	ans = result;
-	finalAnswer = Integer.toString(result);
 	/*
 	try{
 	    Scanner textScanner = new Scanner(input);
